@@ -6,20 +6,20 @@
 //  Copyright © 2019 Hagan M. Vrazel. All rights reserved.
 //
 
-#ifndef functions_h
-#define functions_h
+#ifndef list_functions_h
+#define list_functions_h
 
 #include <stdio.h>
 
-struct Node {
+typedef struct Node {
     int data;
     int key;
     struct Node *next;
-};
+} Node;
 
-struct LinkedList {
+typedef struct LinkedList {
     struct Node *head;
-};
+} LinkedList;
 
 int insert(struct LinkedList *list, int data, int key);
 
@@ -33,4 +33,4 @@ void print_list(struct LinkedList *list);
 
 void create_array(struct LinkedList *list);
 
-#endif /* functions_h */
+#endif /* list_functions_h */
