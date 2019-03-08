@@ -18,7 +18,7 @@ typedef struct Stack {
     int x;
 } Stack;
 
-void s_push(int x, struct Stack *s);
+void s_push(int i, struct Stack *s);
 
 int s_pop(struct Stack *s);
 

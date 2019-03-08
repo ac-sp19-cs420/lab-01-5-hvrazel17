@@ -10,18 +10,20 @@
 #define queue_functions_h
 
 #include <stdio.h>
+#include "list_functions.h"
 
 typedef struct Queue {
     
-    struct LinkedList *list;
+    LinkedList *list;
+    int y;
 } Queue;
 
-void q_push(int y, struct Queue q);
+void q_push(int i, struct Queue *q);
 
-int q_pop(struct Queue q);
+int q_pop(struct Queue *q);
 
-int last(struct Queue q);
+int last(struct Queue *q);
 
-int q_is_empty(struct Queue q);
+int q_is_empty(struct Queue *q);
 
 #endif /* queue_functions_h */
