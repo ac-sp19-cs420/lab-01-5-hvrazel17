@@ -7,8 +7,20 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include "functions.h"
+
+
 
 int main(int argc, const char * argv[]) {
-    printf("Hello, world\n");
+    
+    
+    struct LinkedList *list = (struct LinkedList*) malloc(sizeof(struct LinkedList));
+    insert(list,3,4);
+    print_list(list);
+    
     return 0;
 }
+
