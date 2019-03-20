@@ -1,3 +1,6 @@
+# Grade: 95
+* Let's go over your insert in person so we can make it as robust
+
 # Lab 1.5
 
 **Objective**: The objective of this lab is to get better understanding of C. You will do this by building the following data structures.  Each of these data structures should be in their own `.h/.c` files.
